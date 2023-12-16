@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio | Hazem Azizi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-buttons">
+            <a href="index.html"><button id="button1">Accueil</button></a>
+            <a href="information.html"><button id="button2">About Me</button></a>
+            <a href="skills.html"><button id="button3">Skills</button></a>
+            <a href="experiences.html"><button id="button4">Experiences</button></a>
+        </div>
+        <div class="carte">
+            <img src="media/photo.png">
+            <h2>Hazem Azizi</h2>
+            <p>Student at Esprit<br>&<br>Future Developer</p>
+            <div class="reseau">
+                <a href="https://www.linkedin.com/in/azizi-hazem-60aa3825b/"><img src="media/link.png"></a>
+                <a href="https://www.facebook.com/"><img src="media/fb.png"></a>
+                <a href="https://twitter.com/azizihazem2"><img src="media/twi.png"></a>
+            </div>
+            <a href="#" class="bouton" onclick="contactMe()">Contactez-moi</a>
+        </div>
+    <script>
+        function contactMe() {
+            var name = prompt("Please enter your name:");
+            var email = prompt("Please enter your email:");
+            if (name && email) {
+                alert("Thank you, " + name + "! We will contact you at " + email + ".");
+            } else {
+                alert("Please provide both name and email.");
+            }
+        }
+    </script>
+</body>
